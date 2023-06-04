@@ -19,10 +19,8 @@ void addTodoItem(String item) {
 }
 
 final UListElement todoList = querySelector('#todolist') as UListElement;
-LIElement newLI(String itemText) => LIElement()..text = itemText;
 
 void main() {
   thingsTodo().forEach(addTodoItem);
-  querySelector('#output')?.children.addAll(thingsTodo().map(newLI));
 }
 
